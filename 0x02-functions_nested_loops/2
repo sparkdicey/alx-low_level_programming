@@ -1,0 +1,18 @@
+#include "main.h"
+
+
+print alphabet x10 prints alpha 10 times
+
+void print alphabet_x10(void)
+
+int ten; char la;
+
+for (ten = 0; ten <= 9; ten++)
+
+(
+
+for (la= 'a'; la <= 'z'; lar)
+
+_putchar (La);
+
+_putchar ('\n');

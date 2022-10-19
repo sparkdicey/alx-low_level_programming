@@ -1,19 +1,15 @@
 #include "main.h"
 
 /**
- * print_last_digit prints the last digit
- * @n: the number
- * Return: value of the last digit
- */
+* _isalpha checks for alphabets
+* @c: character to be checked
+* Return: 1 if character is a letter, otherwise
+*/
 
-int print_last_digit(int n)
+int _isalpha(int c)
 {
-	int ld = n % 10;
-
-	if (ld < 0)
-	       	Id = -1;
-	
-	_putchar(ld + '0');
-	
-	return (0);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }

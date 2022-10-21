@@ -1,24 +1,16 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- *  main - takes a date and prints how many days are left in the year, taking
- * leap years into account
- * Return: 0
+ * _isupper - checks is a character is uppercase
+ * @c: carrier integer variable
+ * Return: 1 if true, 0 if false
  */
 
-int main(void)
+int _isupper(int c)
 {
-	int month;
-	int day;
-	int year;
-
-	month = 02;
-	day = 29;
-	year = 200;
-	printf("Date: %02d/%02d/%04d\n", month, day, year);
-	day = convert_day(month, day);
-	print_remaining_days(month, day, year);
-	
+	if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
 	return (0);
 }

@@ -1,24 +1,25 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - infinity loop
- * Return: 0
+ * largest_number - returns the largest of 3 numbers
+ * @a: first int
+ * @b: second int
+ * @c: third int
+ * Return: largest number
  */
 
-int main(void)
+int largest_number(int a, int b, int c)
 {
-	int i;
+	int largest = b;
 
-	printf("Infinite loop incoming :(\n");
+	if (a > b)
+	{
+		largest = a;
+	}
+	else if (c > b)
+	{
+		largest = c;
+	}
 
-	i = 0;
-	/**
-	 * while (i < 10)
-	 * {
-	 * putchar(i);
-	 * }
-	 */
-	printf("Infinite loop avoided! \\o/\n");
-
-	return (0);
+	return (largest);
 }
